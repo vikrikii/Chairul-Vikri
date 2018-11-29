@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Model/Person.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Model/Database.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Model/Aplikasi.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Model/Dokter.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/TambahDokter.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/PilihDokter.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Controller/ControllerTambahDokter.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Controller/ControllerTampilanPasien.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Model/Pasien.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/TambahPasien.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Model/Admin.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/TampilanPasien.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Controller/ControllerTambahPeriksa.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/TambahPeriksa.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/Pilihan.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Model/Periksa.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Controller/ControllerTambahPasien.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/Login.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/RUMAH_SAKIT.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Controller/ControllerPilihDokter.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Controller/ControllerPilihan.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Controller/ControllerTambahRuangan.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Controller/ControllerLogin.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/View/TambahRuangan.java</file>
+            <file>file:/F:/KULYEAH!1!1/SEMESTER%203/PBO/%5B%5BTUBES%5D%5D/RUMAH_SAKIT/src/Model/Ruangan.java</file>
+        </group>
+    </open-files>
+</project-private>
