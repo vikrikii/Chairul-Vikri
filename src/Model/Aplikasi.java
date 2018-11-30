@@ -140,4 +140,8 @@ public class Aplikasi {
         return listPeriksa;
     }
     
+    public Database getDatabase(){
+    return db;
+    }
+    
 }

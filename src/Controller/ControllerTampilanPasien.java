@@ -44,8 +44,11 @@ public class ControllerTampilanPasien extends MouseAdapter implements ActionList
     
     
     public Periksa[] getDetilPasien(Pasien p){
-        Periksa[] daftarbaru = new Periksa[p.getJumlahPeriksa()];
-        daftarbaru = p.getListPeriksa();
+        app.getDatabase().loadPeriksaP(p);
+        Periksa[] daftarbaru = p.getListPeriksa();
+        for(Periksa per : daftarbaru){
+            System.out.println(per  == null);
+        }
         return daftarbaru;
     }
  

@@ -57,7 +57,7 @@ public class Periksa {
         String s = "Tanggal Periksa: " +  this.getTanggalPeriksa() +"\n"
                 + "Indikasi : " + this.getDiagnosa() + "\n"
                 + "Rekomendasi : " + this.getResep() + "\n";
-
+        
         return s;
     }
 }

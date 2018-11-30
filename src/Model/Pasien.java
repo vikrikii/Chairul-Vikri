@@ -14,15 +14,15 @@ import java.util.ArrayList;
 public class Pasien {
 
     private String nama;
-    private Periksa[] riwayatPeriksa ;
-    private int jumlahPeriksa ;
+    private ArrayList<Periksa> riwayatPeriksa ;
+
     private String idPasien;
 
     
     public Pasien(String id, String nama) {
         this.nama = nama;
         this.idPasien = id;
-        this.riwayatPeriksa = new Periksa[100];
+        this.riwayatPeriksa = new ArrayList<Periksa>();
     }
 
     public String getIDPasien(){
@@ -34,8 +34,8 @@ public class Pasien {
     }
 
     public String getResepTerakhir() {
-        if (this.jumlahPeriksa >= 0 ) {
-            return riwayatPeriksa[jumlahPeriksa].getResep();
+        if (riwayatPeriksa.size() > 0 ) {
+            return riwayatPeriksa.get(riwayatPeriksa.size()-1).getResep();
             
         } else {
             return "Pasien belum pernah diperiksa.";
@@ -43,8 +43,8 @@ public class Pasien {
     }
 
     public String getDiagnosaTerakhir() {
-        if (this.jumlahPeriksa >= 0 ) {
-            return riwayatPeriksa[jumlahPeriksa].getDiagnosa();
+        if (riwayatPeriksa.size() > 0 ) {
+            return riwayatPeriksa.get(riwayatPeriksa.size()-1).getDiagnosa();
             
         } else {
             return "Pasien belum pernah diperiksa.";
@@ -53,34 +53,38 @@ public class Pasien {
     }
 
     public String getTanggalTerakhirPeriksa() {
-        if (this.jumlahPeriksa >= 0 ) {
-            return riwayatPeriksa[jumlahPeriksa].getTanggalPeriksa();
+        if (riwayatPeriksa.size() > 0 ) {
+            return riwayatPeriksa.get(riwayatPeriksa.size()-1).getTanggalPeriksa();
         } else {
             return "Pasien belum pernah diperiksa.";
         }
     }
 
     public int getJumlahPeriksa() {
-        return jumlahPeriksa;
+        return riwayatPeriksa.size();
     }
 
     public Periksa getPeriksa(int i) {
-        return riwayatPeriksa[i];
+        return riwayatPeriksa.get(i);
     }
-
-    public void setJumlahPeriksa(int jumlahPeriksa) {
-        this.jumlahPeriksa = jumlahPeriksa;
+    
+    public void clearRiwayat(){
+        riwayatPeriksa.clear();
     }
     
     public void addPeriksa(Dokter d, Pasien p, String tanggal, String diagnosa, String resep, String idPeriksa) {
         Periksa entry = new Periksa(d, p, tanggal, diagnosa, resep,idPeriksa);        
-        this.riwayatPeriksa[jumlahPeriksa] = entry;
-        this.jumlahPeriksa++;
+        this.riwayatPeriksa.add(entry);
         
     }
 
     public Periksa[] getListPeriksa() {
-        return riwayatPeriksa;
+        Periksa[] rp = new Periksa[riwayatPeriksa.size()];
+        for(int i = 0 ; i < riwayatPeriksa.size() ; i++){
+            rp[i] = riwayatPeriksa.get(i);
+        }
+        
+        return rp;
     }
 
     @Override

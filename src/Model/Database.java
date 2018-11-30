@@ -56,17 +56,17 @@ public class Database {
 
     public void insertPeriksa(Periksa c, Dokter d, Pasien p, Ruangan r) {
         try {
-            String query = "insert into periksa(IDPeriksa,Dokter,IDPasien,NomorRuang,TanggalPeriksa,Diagnosa,Resep) values"
+            String query = "insert into periksa(IDPeriksa,Dokter,IDPasien,NomorRuangan,TanggalPeriksa,Diagnosa,Resep) values"
                     + "('" + c.getIDPeriksa()+ "', "
                     + "'" + d.getNama() + "', "
                     + "'" + p.getIDPasien()+ "', "
                     + "'" + r.getNomor() + "', "
                     + "'" + c.getTanggalPeriksa() + "', "
                     + "'" + c.getDiagnosa() + "', "
-                    + "'" + c.getResep() + "')";
+                    + "'" + c.getResep() + "');";
             statement.execute(query);
         } catch (Exception e) {
-            throw new IllegalArgumentException("terjadi kesalahan, cek inserts ini lagi");
+            System.out.println(e.getMessage());
         }
     }
 
@@ -200,8 +200,9 @@ public class Database {
     public Periksa[] loadPeriksaP(Pasien p) {
         try {
             Dokter d = null;
-            String query = "select * from periksa";
+            String query = "select * from periksa where IDPasien='"+p.getIDPasien()+"';";
             ResultSet rs = statement.executeQuery(query);
+            p.clearRiwayat();
             while (rs.next()) {
 
                 Statement statement3 = connection.createStatement();

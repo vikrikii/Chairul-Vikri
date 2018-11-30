@@ -233,7 +233,13 @@ public class TampilanPasien extends javax.swing.JFrame {
     
     
     public void setTextPasienDetil(Periksa[] c){
-            txDetilArea.setText(c.toString());
+         
+        String result = "";
+        for(Periksa p : c){
+            result += p.toString() + "\n\n";
+        }
+        
+        txDetilArea.setText(result.equals("")?"Pasien Blom Diperiksa":result);
         
     }
     
